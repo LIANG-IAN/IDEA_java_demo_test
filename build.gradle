@@ -16,9 +16,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	//mysql connector
+
+    //mysql connector
 	implementation 'mysql:mysql-connector-java:8.0.31'
     implementation 'org.jetbrains:annotations:20.1.0'
+
+    // springfox
+//    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    // openapi
+    implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

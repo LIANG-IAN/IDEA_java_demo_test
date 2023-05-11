@@ -51,8 +51,6 @@ class BankTest {
     Assert.isTrue(response.getMessage().equals("存款成功"), "存款失敗");
     //測完可以刪了
     //bankDao.delete(resBank);
-
-
   }
 
   @Test
@@ -69,7 +67,6 @@ class BankTest {
     Assert.isTrue(response.getMessage().equals("提款成功"), "提款失敗");
     //測完可以刪了
     //bankDao.delete(resultBank);
-
-
   }
 }
+
