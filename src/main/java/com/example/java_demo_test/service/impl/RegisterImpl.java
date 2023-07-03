@@ -6,6 +6,8 @@ import com.example.java_demo_test.service.ifs.RegisterService;
 import com.example.java_demo_test.vo.ActiveRequest;
 import com.example.java_demo_test.vo.RegisterRequest;
 import com.example.java_demo_test.vo.RegisterResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -20,6 +22,8 @@ public class RegisterImpl implements RegisterService {
 
   @Autowired
   RegisterDao registerDao;
+
+  private Logger logger = LoggerFactory.getLogger(getClass());
 
   @Override
   public RegisterResponse register(RegisterRequest request) {
